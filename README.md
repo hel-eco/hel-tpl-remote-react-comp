@@ -58,7 +58,6 @@ css文件link是由runtime.main.js动态拼接到header里的，这不是我们�
 
 而写为头部静态导入时，就包含了css文件link了。
 
-
 ### cjs包
 以下package.json里的script命令暂时移出，这里涉及到如何使用webpack打包组件库的知识点，欢迎同事贡献
 > 待后续hel-micro支持非浏览器环境能解析远程模块就不需要了，无该命名不影响远程模块的提供和使用，仅影响使用方执行测试是，jest需要自己打桩，如果提供了直接使用`hel_bundle/xxx.js`文件作文打桩对象会方便一些
