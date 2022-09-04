@@ -4,21 +4,19 @@ const jestConfig = {
   roots: ['<rootDir>'],
   // 收集测试覆盖率的匹配文件规则集合，!代表排除的文件
   collectCoverageFrom: [
-    'src/**/*.{ts,tsx}', '!src/**/*.d.ts', '!src/types/**/*.ts', '!src/index.tsx', '!src/serviceWorker.ts',
-    '!src/components/_demos/**/*.{ts,tsx}',
+    'src/**/*.{js,jsx,ts,tsx}',
+    '!src/**/*.d.ts', '!src/types/**/*.js', '!src/serviceWorker.js', '!src/components/_demos/**/*.{js,jsx,ts,tsx}',
   ],
   setupFiles: ['react-app-polyfill/jsdom'],
   setupFilesAfterEnv: [
-    './node_modules/jest-enzyme/lib/index.js',
-    "<rootDir>/src/setupTests.ts",
-    '<rootDir>/tests/utils/testSetup.ts',
   ],
   testMatch: [
-    "<rootDir>/src/**/__tests__/**/*.{ts,tsx}",
-    "<rootDir>/src/**/*.{spec,test}.{ts,tsx}",
-    '<rootDir>/tests/**/*.{spec,test}.{ts,tsx}',
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}",
+    '<rootDir>/tests/**/*.{spec,test}.{js,jsx,ts,tsx}',
   ],
-  testEnvironment: 'jest-environment-jsdom-fourteen',
+  // testEnvironment: 'jest-environment-jsdom-fourteen',
+  testEnvironment: 'jsdom',
   transform: {
     "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
     "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
