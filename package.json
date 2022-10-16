@@ -1,7 +1,7 @@
 {
   "name": "hel-tpl-remote-react-comps",
   "appGroupName": "hel-tpl-remote-react-comps",
-  "version": "0.2.4",
+  "version": "0.2.3",
   "main": "hel_proxy/entry.js",
   "module": "hel_proxy_es/entry.js",
   "types": "lib/entrance/libTypes.ts",
