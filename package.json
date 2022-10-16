@@ -1,7 +1,7 @@
 {
   "name": "hel-tpl-remote-react-comps",
   "appGroupName": "hel-tpl-remote-react-comps",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "hel_proxy/entry.js",
   "module": "hel_proxy_es/entry.js",
   "types": "lib/entrance/libTypes.ts",
@@ -80,6 +80,7 @@
   },
   "scripts": {
     "postinstall": "node ./scripts/postinstall.js",
+    "prepublishOnly": "node ./scripts/prepublishOnly.js",
     "check": "node ./scripts/check.js",
     "start": "cross-env PORT=3103 node scripts/start.js",
     "build": "npm run check_name && npm run build_dist && npm run build_meta && npm run build_proxy",
