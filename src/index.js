@@ -20,7 +20,7 @@ async function main() {
   // await helMicro.preFetchLib('other-lib');
 
   const libProperties = await import('./entrance/libProperties');
-  // 表示模块已准备就绪，注意此处传递的是 default
+  // !!!注意这句话不能删掉，否则会导致使用方无法获取到模块
   libReady(LIB_NAME, libProperties.default);
 
   // 非子应用时（即不是被别的模块触发载入的情况），自己挂载渲染节点，方便本地调试
