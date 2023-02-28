@@ -5,7 +5,7 @@
   "main": "hel_proxy/entry.js",
   "module": "hel_proxy_es/entry.js",
   "types": "lib/entrance/libTypes.ts",
-  "unpkg": "hel_dist/entry.js",
+  "unpkg": "hel_dist/index.html",
   "dependencies": {
     "hel-lib-proxy": "^3.8.3",
     "hel-micro": "^3.8.4",
