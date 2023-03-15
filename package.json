@@ -7,8 +7,8 @@
   "types": "lib/entrance/libTypes.ts",
   "unpkg": "hel_dist/index.html",
   "dependencies": {
-    "hel-lib-proxy": "^3.8.3",
-    "hel-micro": "^3.8.4",
+    "hel-lib-proxy": "^3.13.0",
+    "hel-micro": "^3.13.12",
     "react": ">=16.8.0",
     "react-app-polyfill": ">=1.0.0",
     "react-dom": ">=16.8.0",
