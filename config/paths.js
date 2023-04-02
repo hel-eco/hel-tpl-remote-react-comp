@@ -2,7 +2,7 @@
 
 const path = require('path');
 const fs = require('fs');
-const subApp = require('./subApp');
+const subApp = require('./appInfo');
 // const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath');
 
 // Make sure any symlinks in the project folder are resolved:
