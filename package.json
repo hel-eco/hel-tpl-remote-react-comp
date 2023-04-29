@@ -1,7 +1,7 @@
 {
   "name": "hel-tpl-remote-react-comps",
   "appGroupName": "hel-tpl-remote-react-comps",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "hel_proxy/entry.js",
   "module": "hel_proxy_es/entry.js",
   "types": "lib/entrance/libTypes.ts",
@@ -49,7 +49,7 @@
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
-    "hel-dev-utils": "^4.3.5",
+    "hel-dev-utils": "^4.3.8",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.3",
