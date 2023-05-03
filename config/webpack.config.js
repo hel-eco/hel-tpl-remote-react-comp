@@ -27,7 +27,7 @@ const ForkTsCheckerWebpackPlugin =
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const createEnvironmentHash = require('./webpack/persistentCache/createEnvironmentHash');
-const subApp = require('./appInfo');
+const appInfo = require('./appInfo');
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
@@ -229,7 +229,7 @@ module.exports = function (webpackEnv) {
             .replace(/\\/g, '/')
         : isEnvDevelopment &&
         (info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')),
-      chunkLoadingGlobal: subApp.jsonpFnName,
+      chunkLoadingGlobal: appInfo.jsonpFnName,
     },
     cache: {
       type: 'filesystem',
@@ -753,6 +753,6 @@ module.exports = function (webpackEnv) {
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
     performance: false,
-    externals: subApp.externals,
+    externals: appInfo.externals,
   };
 };

@@ -2,7 +2,7 @@
 
 const path = require('path');
 const fs = require('fs');
-const subApp = require('./appInfo');
+const appInfo = require('./appInfo');
 // const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath');
 
 // Make sure any symlinks in the project folder are resolved:
@@ -25,10 +25,10 @@ const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 // 此处传入的url值仅为了方便另一个项目可以基于当前模块的wed-dev-server调试当前模块代码，端口号对齐 npm run start 里的 PORT
 // 它不会影响流水线的 publicUrl 值，因为 hel-dev-utils 内部发现流水线设置的 process.env.HEL_APP_HOME_PAGE 时，
 // 会优先采用 HEL_APP_HOME_PAGE 值作为 publicUrl，覆盖掉这里的默认值
-const publicUrlOrPath = subApp.getPublicPathOrUrl('http://localhost:3103');
+const publicUrlOrPath = appInfo.getPublicPathOrUrl('http://localhost:3103');
 
 // const buildPath = process.env.BUILD_PATH || 'build';
-const buildPath = subApp.distDir;
+const buildPath = appInfo.distDir;
 
 const moduleFileExtensions = [
   'web.mjs',
