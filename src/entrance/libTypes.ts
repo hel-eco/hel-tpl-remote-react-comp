@@ -6,6 +6,8 @@ type LibProperties = typeof libProperties;
 
 export const lib = exposeLib<LibProperties>(LIB_NAME);
 
+export const HelloRemoteReactComp = lib.HelloRemoteReactComp;
+
 export type Lib = LibProperties;
 
 export default lib;

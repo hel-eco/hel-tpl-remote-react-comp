@@ -1,15 +1,15 @@
 {
   "name": "hel-tpl-remote-react-comps",
   "appGroupName": "hel-tpl-remote-react-comps",
-  "version": "1.3.0",
+  "version": "1.3.3",
   "main": "hel_proxy/entry.js",
   "module": "hel_proxy_es/entry.js",
   "types": "lib/entrance/libTypes.ts",
   "unpkg": "hel_dist/index.html",
   "dependencies": {
     "hel-iso": "^4.3.2",
-    "hel-lib-proxy": "^4.7.0",
-    "hel-micro": "^4.7.1",
+    "hel-lib-proxy": "^4.7.2",
+    "hel-micro": "^4.7.3",
     "react": ">=16.8.0",
     "react-app-polyfill": ">=1.0.0",
     "react-dom": ">=16.8.0",

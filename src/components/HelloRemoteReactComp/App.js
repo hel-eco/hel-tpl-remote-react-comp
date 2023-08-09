@@ -17,9 +17,6 @@ const App = React.forwardRef(function App(props, ref) {
           <h1>This is a hel remote react component</h1>
           <h2>emitted by hel-micro</h2>
         </p>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://tnfe.github.io/hel"
