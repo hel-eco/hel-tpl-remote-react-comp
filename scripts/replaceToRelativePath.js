@@ -19,6 +19,9 @@ const replacePath = require('replace-absolute-path');
   const srcDir = process.env.BUNDLE === 'true' ? path.resolve(__dirname, '../lib-js') : path.resolve(__dirname, '../src');
   const libDir = process.env.BUNDLE === 'true' ? path.resolve(__dirname, '../lib-js') : path.resolve(__dirname, '../lib');
   replacePath({
+    alias: {
+      '@lib': 'components',
+    },
     inputDir: srcDir,
     outputDir: libDir,
     // includeExts: DEFAULT_EXTS.concat(['.md']),

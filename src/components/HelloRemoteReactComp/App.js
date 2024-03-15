@@ -14,7 +14,7 @@ const App = React.forwardRef(function App(props, ref) {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <h1>This is a hel remote react component</h1>
+          <h1>This is a hel remote react component v2.0.0</h1>
           <h2>emitted by hel-micro</h2>
         </p>
         <a
